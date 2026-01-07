@@ -1,162 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artesanías y Escudos de México</title>
-
-  <!-- ===== ESTILOS ===== -->
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fafafa;
-      color: #333;
-    }
-    header {
-      background-image: url('https://images.pexels.com/photos/460941/pexels-photo-460941.jpeg');
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      padding: 120px 20px;
-      color: white;
-    }
-    header h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 8px #000;
-    }
-    header p {
-      font-size: 1.3em;
-      text-shadow: 2px 2px 8px #000;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .card h3 {
-      margin-top: 15px;
-      color: #2C2C2C;
-    }
-    .boton {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background-color: #006064;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .boton:hover {
-      background-color: #004d40;
-    }
-
-    footer {
-      background-color: #006064;
-      color: white;
-      text-align: center;
-      padding: 18px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Etiquetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6a0dad; /* Morado */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #6a0dad; /* Morado */
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a0c9d;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- ===== ENCABEZADO ===== -->
-  <header>
-    <h1>Artesanías y Escudos de México</h1>
-    <p>Lo mejor del arte mexicano en un solo lugar</p>
-  </header>
-
-  <!-- ===== PRODUCTOS DESTACADOS ===== -->
-  <section>
-    <h2 style="text-align:center;">Nuestros Productos</h2>
-    <div class="productos">
-
-      <div class="card">
-        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="Artesanía Mexicana">
-        <h3>Artesanía Tradicional</h3>
-        <a class="boton" href="#">Ver más</a>
-      </div>
-
-      <div class="card">
-        <img src="https://images.pexels.com/photos/7289969/pexels-photo-7289969.jpeg" alt="Escudo Artesanal">
-        <h3>Escudos de México</h3>
-        <a class="boton" href="#">Ver más</a>
-      </div>
-
-      <div class="card">
-        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Artesanía de Madera">
-        <h3>Artesanía en Madera</h3>
-        <a class="boton" href="#">Ver más</a>
-      </div>
-
+    <header>
+        <h1>Venta de Etiquetas Personalizadas</h1>
+    </header>
+    <div class="container">
+        <h2>Cuéntanos tu idea</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="idea">Descripción de la idea:</label>
+                <textarea id="idea" name="idea" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Contacto Directo</h2>
+        <p>Puedes contactarnos directamente por WhatsApp:</p>
+        <a href="https://wa.me/tu-numero" target="_blank">
+            <button>Contactar por WhatsApp</button>
+        </a>
     </div>
-  </section>
-
-  <!-- ===== GALERÍA ===== -->
-  <section>
-    <h2 style="text-align:center;">Galería de Arte Mexicano</h2>
-    <div class="productos">
-
-      <div class="card">
-        <img src="https://images.pexels.com/photos/4459929/pexels-photo-4459929.jpeg" alt="Galería Artesanía">
-      </div>
-
-      <div class="card">
-        <img src="https://images.pexels.com/photos/2372723/pexels-photo-2372723.jpeg" alt="Galería Escudos">
-      </div>
-
-      <div class="card">
-        <img src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg" alt="Más Artesanías">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== CONTACTO ===== -->
-  <section>
-    <h2 style="text-align:center;">Contáctanos</h2>
-    <p style="text-align:center;">Escríbenos para diseños personalizados o pedidos especiales</p>
-
-    <form style="max-width:600px; margin:auto;">
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu correo" required />
-      <textarea rows="5" placeholder="¿Qué necesitas?" required></textarea>
-      <button class="boton" type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- ===== WHATSAPP ===== -->
-  <a class="boton" style="position:fixed; bottom:20px; right:20px; background-color:#25D366;" href="https://wa.me/5210000000000" target="_blank">💬 WhatsApp</a>
-
-  <!-- ===== PIE ===== -->
-  <footer>
-    <p>© 2026 Artesanías & Escudos de México</p>
-    <p>Arte con pasión mexicana 🇲🇽</p>
-  </footer>
-
 </body>
 </html>
